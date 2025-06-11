@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="hero">
+
+    <nav>
+      <img src="./images/real youtube logo.jpg" alt="">
+
+      <ul>
+        <li><a href="">Home</a> 
+        <li><a href="">About</a> 
+        <li><a href="">Portfolio</a> 
+        <li><a href="">Services</a> 
+        <li><a href="">Hire Me</a> 
+      </ul>
+       <i class="fa-solid fa-moon"id="moon" ></i> 
+      <!-- <img src="./images/real youtube logo.jpg" id="icon" alt="logo"> -->
+    </nav>
+
+    <div class="info">
+      <h1>I'M <span>Boniface</span> Hillary</h1>
+        <p>this is my official portfolio website to showcase my all works related web<br>development and UI desingn.</p>
+      <a href="">Download CV</a>
+    </div>
+
+    <div class="img-box">
+      <img src="./images/image1.jpeg" class="back-img" alt="img1">
+      <img src="./images/image2.jpg" class="main-img" alt="img2">
+
+    </div>
+
+
+
+  </div>
+
+  <script>
+
+    var moon = document.getElementById("moon");
+
+    moon.onclick = function(){
+      document.body.classList.toggle("dark-theme");
+      if(document.body.classList.contains("dark-theme")) {
+
+        // moon.classList.remove("fa-moon");
+        // moon.classList.add("fa-sun");
+
+        moon.innerHTML = '<i class="fa-solid fa-sun"></i>';
+      }else{
+
+        // moon.classList.remove("fa-sun");
+        // moon.classList.add("fa-moon");
+
+        moon.innerHTML = '<i class="fa-solid fa-moon"></i>';
+      }
+    }
+
+
+  </script>
+  
+</body>
+</html>
